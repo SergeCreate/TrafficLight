@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressButton(_ sender: UIButton) {
-        startButton.setTitle("NEXT", for: .normal)
+        startButton.setTitle("Next", for: .normal)
         
         if redLightView.alpha == yellowLightView.alpha {
             redLightView.alpha = CGFloat(MAXFLOAT)
