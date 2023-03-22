@@ -22,6 +22,9 @@
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJ7-Ud-hb9">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pJ7-Ud-hb9" secondAttribute="height" multiplier="1:1" id="lpa-CE-8GP"/>
+                                        </constraints>
                                     </view>
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBV-99-6FV">
                                         <rect key="frame" x="0.0" y="126" width="100" height="100"/>
@@ -48,13 +51,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dSe-6x-EGi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="2sX-Mm-9OX"/>
-                            <constraint firstItem="dSe-6x-EGi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:142" id="75g-kR-biI"/>
-                            <constraint firstItem="M78-ZB-Ak8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FN1-Ml-azy"/>
-                            <constraint firstItem="M78-ZB-Ak8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="73:568" id="UGd-NY-oDh"/>
-                            <constraint firstItem="dSe-6x-EGi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kp7-09-ow4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M78-ZB-Ak8" secondAttribute="bottom" constant="51" id="n6S-Oe-r01"/>
-                            <constraint firstItem="dSe-6x-EGi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.619718" id="s04-5g-hJI"/>
+                            <constraint firstItem="dSe-6x-EGi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="2uQ-3k-3hB"/>
+                            <constraint firstItem="M78-ZB-Ak8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="73:568" id="IUa-A0-jq2"/>
+                            <constraint firstItem="dSe-6x-EGi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.619718" id="JpD-nY-zyK"/>
+                            <constraint firstItem="dSe-6x-EGi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aMd-wO-cm1"/>
+                            <constraint firstItem="M78-ZB-Ak8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bT4-SG-gS6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M78-ZB-Ak8" secondAttribute="bottom" constant="51" id="il8-7g-IiG"/>
                         </constraints>
                     </view>
                     <connections>
