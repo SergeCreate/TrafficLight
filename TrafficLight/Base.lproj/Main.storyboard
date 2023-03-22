@@ -34,7 +34,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M78-ZB-Ak8">
-                                <rect key="frame" x="137.5" y="483" width="45" height="38"/>
+                                <rect key="frame" x="123.5" y="479" width="73" height="38"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="tintColor" systemColor="labelColor"/>
@@ -50,10 +50,10 @@
                         <constraints>
                             <constraint firstItem="dSe-6x-EGi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="2sX-Mm-9OX"/>
                             <constraint firstItem="dSe-6x-EGi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:142" id="75g-kR-biI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M78-ZB-Ak8" secondAttribute="bottom" constant="47" id="Gdl-pt-LOd"/>
-                            <constraint firstItem="M78-ZB-Ak8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RD8-Z7-y4C"/>
+                            <constraint firstItem="M78-ZB-Ak8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FN1-Ml-azy"/>
+                            <constraint firstItem="M78-ZB-Ak8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="73:568" id="UGd-NY-oDh"/>
                             <constraint firstItem="dSe-6x-EGi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kp7-09-ow4"/>
-                            <constraint firstItem="M78-ZB-Ak8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="45:568" id="psu-4P-wpu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M78-ZB-Ak8" secondAttribute="bottom" constant="51" id="n6S-Oe-r01"/>
                             <constraint firstItem="dSe-6x-EGi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.619718" id="s04-5g-hJI"/>
                         </constraints>
                     </view>
@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="233" y="17"/>
+            <point key="canvasLocation" x="232.5" y="16.901408450704224"/>
         </scene>
     </scenes>
     <resources>
