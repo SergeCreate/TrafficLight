@@ -9,46 +9,51 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let alphaLight: CGFloat = 0.3
-    
     @IBOutlet var redLightView: UIView!
     @IBOutlet var yellowLightView: UIView!
     @IBOutlet var greenLightView: UIView!
     
     @IBOutlet var startButton: UIButton!
     
+    private let lightIsOff: CGFloat = 0.3
+    private let lightIsOn: CGFloat = 1
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        redLightView.alpha = alphaLight
-        redLightView.layer.cornerRadius = 80
-        
-        
-        yellowLightView.alpha = alphaLight
-        yellowLightView.layer.cornerRadius =  80
-        
-        greenLightView.alpha = alphaLight
-        greenLightView.layer.cornerRadius =  80
-        
         startButton.layer.cornerRadius = 15
+        
+        redLightView.alpha = lightIsOff
+        yellowLightView.alpha = lightIsOff
+        greenLightView.alpha = lightIsOff
+    
     }
     
-    @IBAction func pressButton(_ sender: UIButton) {
-        startButton.setTitle("Next", for: .normal)
+    override func viewWillLayoutSubviews() {
+        redLightView.layer.cornerRadius = redLightView.frame.width / 2
+        yellowLightView.layer.cornerRadius = yellowLightView.frame.width / 2
+        greenLightView.layer.cornerRadius = greenLightView.frame.width / 2
+    }
+    
+    @IBAction func pressButton() {
+        if startButton.currentTitle == "Start" {
+            startButton.setTitle("Next", for: .normal)
+        }
         
         if redLightView.alpha == yellowLightView.alpha {
-            redLightView.alpha = CGFloat(MAXFLOAT)
-            greenLightView.alpha = alphaLight
-        } else if redLightView.alpha > alphaLight &&
-                    yellowLightView.alpha == greenLightView.alpha {
-            yellowLightView.alpha = CGFloat(MAXFLOAT)
-            redLightView.alpha = alphaLight
+            redLightView.alpha = lightIsOn
+            greenLightView.alpha = lightIsOff
             
-        } else if yellowLightView.alpha > alphaLight &&
+        } else if redLightView.alpha > lightIsOff &&
+                    yellowLightView.alpha == greenLightView.alpha {
+            yellowLightView.alpha = lightIsOn
+            redLightView.alpha = lightIsOff
+            
+        } else if yellowLightView.alpha > lightIsOff &&
                     greenLightView.alpha == redLightView.alpha {
-            greenLightView.alpha = CGFloat(MAXFLOAT)
-            yellowLightView.alpha = alphaLight
+            greenLightView.alpha = lightIsOn
+            yellowLightView.alpha = lightIsOff
         }
     }
 }
